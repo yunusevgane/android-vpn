@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_action_button_common">48dp</dimen>
+    <dimen name="radius_action_button_common">16dp</dimen>
+    <dimen name="padding_common">16dp</dimen>
+    <dimen name="height_item_vpn_server">60dp</dimen>
+    <dimen name="height_input_view">56dp</dimen>
+</resources>

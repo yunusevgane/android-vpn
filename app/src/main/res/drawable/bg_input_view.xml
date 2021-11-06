@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:drawable="@drawable/bg_input_view_unfocused" android:state_selected="false" app:state_error="false" />
+    <item android:drawable="@drawable/bg_input_view_focused" android:state_selected="true" app:state_error="false" />
+    <item android:drawable="@drawable/bg_input_view_error" android:state_selected="false" app:state_error="true" />
+</selector>

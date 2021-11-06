@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_common">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/campton_bold"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="18sp"
+        tools:text="Cancel Premium" />
+
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_delete" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="@dimen/padding_common"
+        android:fontFamily="@font/campton_book"
+        android:lineSpacingExtra="0.4dp"
+        android:textColor="@color/colorTextGray"
+        android:textSize="14sp"
+        tools:text="Are you sure to cancel package? All premium features will be no longer existing" />
+
+    <TextView
+        android:id="@+id/tvPositive"
+        style="@style/ActionButton.Small"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tvMessage"
+        android:layout_alignParentEnd="true"
+        android:minWidth="90dp"
+        android:paddingHorizontal="@dimen/padding_common"
+        tools:text="Confirm" />
+
+    <TextView
+        android:id="@+id/tvNegative"
+        style="@style/ActionButton.Small"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tvMessage"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@+id/tvPositive"
+        android:background="@drawable/bg_negative_dialog"
+        android:minWidth="90dp"
+        android:paddingHorizontal="@dimen/padding_common"
+        android:textColor="@color/colorTextBlack"
+        android:visibility="gone"
+        tools:text="Confirm"
+        tools:visibility="visible" />
+</RelativeLayout>

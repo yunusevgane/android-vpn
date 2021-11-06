@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "336180377591",
+    "firebase_url": "https://kupon-master.firebaseio.com",
+    "project_id": "kupon-master",
+    "storage_bucket": "kupon-master.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336180377591:android:2fd3d29b502498abc920f2",
+        "android_client_info": {
+          "package_name": "com.eskimobile.jetvpn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336180377591-kcr2cbuso8qg37d43cfnit2a11h09kf7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eskimobile.jetvpn",
+            "certificate_hash": "329917fec6a07e867a507339f86b1c77f7479986"
+          }
+        },
+        {
+          "client_id": "336180377591-ogalgnjhnort90t7ireli4jfmt2ulqsu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTIO7HtVyph5BLslNU3njajMJtf3gSrRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336180377591-ogalgnjhnort90t7ireli4jfmt2ulqsu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336180377591:android:e2f9eb723469cb74c920f2",
+        "android_client_info": {
+          "package_name": "com.eskimobile.kuponmaster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336180377591-0jg6qqs44qqt7rec43324sd7jurgbjjs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eskimobile.kuponmaster",
+            "certificate_hash": "cf7a5dffe0fbbeb7b25a4c1adebe606992c9a138"
+          }
+        },
+        {
+          "client_id": "336180377591-ogalgnjhnort90t7ireli4jfmt2ulqsu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTIO7HtVyph5BLslNU3njajMJtf3gSrRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336180377591-ogalgnjhnort90t7ireli4jfmt2ulqsu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

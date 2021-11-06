@@ -1,0 +1,102 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ThemeMain" parent="AppTheme.NoActionBar">
+        <item name="android:navigationBarColor">@color/colorNavBottomBackground</item>
+    </style>
+
+    <style name="ActionButton">
+        <item name="android:layout_height">@dimen/height_action_button_common</item>
+        <item name="fontFamily">@font/campton_bold</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_action_button</item>
+        <item name="android:letterSpacing">0.2</item>
+    </style>
+
+    <style name="ActionButton.State">
+        <item name="android:background">@drawable/bg_action_button_state</item>
+    </style>
+
+    <style name="ActionButton.Small">
+        <item name="android:layout_height">40dp</item>
+        <item name="fontFamily">@font/campton_bold</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_action_button</item>
+    </style>
+
+    <style name="TextView.LabelProfile">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="fontFamily">@font/campton_bold</item>
+    </style>
+
+    <style name="TextView.TextFielProfile" parent="TextView.LabelProfile">
+        <item name="fontFamily">@font/campton_book</item>
+    </style>
+
+    <style name="TextView" />
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="android:windowAnimationStyle">@style/BottomDialogAnimation</item>
+    </style>
+
+    <style name="BottomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_bottom_up</item>
+        <item name="android:windowExitAnimation">@anim/anim_bottom_down</item>
+    </style>
+
+    <style name="TextView.Title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="fontFamily">@font/campton_bold</item>
+    </style>
+
+    <style name="TextView.Content">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/campton_book</item>
+    </style>
+
+    <style name="TextView.Small">
+        <item name="android:textSize">9sp</item>
+        <item name="android:letterSpacing">0.14</item>
+        <item name="alpha">0.5</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+    <style name="TextView.Action">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/campton_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:letterSpacing">0.2</item>
+        <item name="android:background">@drawable/bg_action_button_2</item>
+    </style>
+
+    <style name="TextView.Tab">
+        <item name="fontFamily">@font/campton_bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/padding_common">
+
+    <com.eskimobile.jetvpn.common.widget.AuthToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:atb_left="@drawable/ic_delete"
+        app:atb_right="@string/sign_up"
+        app:atb_title="@string/login" />
+
+    <com.eskimobile.jetvpn.common.widget.InputView
+        android:id="@+id/inputAddress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_input_view"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="22dp"
+        android:inputType="textEmailAddress"
+        app:iv_action="CANCEL"
+        app:iv_hint="@string/hint_email_address"
+        app:iv_label="@string/email_address" />
+
+    <com.eskimobile.jetvpn.common.widget.InputView
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_input_view"
+        android:layout_below="@+id/inputAddress"
+        android:layout_marginTop="@dimen/padding_common"
+        android:inputType="textPassword"
+        app:iv_action="HINT"
+        app:iv_hint="@string/hint_password"
+        app:iv_label="@string/password" />
+
+    <com.eskimobile.jetvpn.common.widget.InputView
+        android:id="@+id/inputConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_input_view"
+        android:layout_below="@+id/inputPassword"
+        android:layout_marginTop="@dimen/padding_common"
+        android:inputType="textPassword"
+        android:visibility="gone"
+        app:iv_action="HINT"
+        app:iv_hint="@string/hint_confirm_password"
+        app:iv_label="@string/confirm_password"
+        tools:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/viewAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputConfirmPassword"
+        android:layout_marginTop="23dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/campton_book"
+            android:text="@string/forgot_password"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvPrivatePolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/campton_book"
+            android:text="@string/message_agree"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.eskimobile.jetvpn.common.widget.SnackBarView
+        android:id="@+id/snackBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewAction"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorError"
+        android:visibility="invisible"
+        app:sbv_icon="@drawable/ic_warning"
+        app:sbv_message="@string/message_invalid_email"
+        tools:visibility="visible" />
+
+    <com.eskimobile.jetvpn.common.widget.SnackBarView
+        android:id="@+id/snackBar_Notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvBottomAction"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/colorBgSnackbar"
+        android:visibility="invisible"
+        app:sbv_icon="@drawable/ic_snackbar_done"
+        app:sbv_message="@string/message_password_was_changed"
+        tools:visibility="visible" />
+
+    <include
+        layout="@layout/layout_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvBottomAction"
+        style="@style/ActionButton.State"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:text="@string/login" />
+</RelativeLayout>

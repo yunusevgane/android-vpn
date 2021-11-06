@@ -1,0 +1,162 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_common">
+
+        <!-- View Info: Email, password -->
+        <RelativeLayout
+            android:id="@+id/view_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_banner"
+            android:layout_marginTop="-70dp"
+            android:background="@drawable/bg_block_profile"
+            android:paddingTop="70dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/label_email"
+                style="@style/TextView.LabelProfile"
+                android:layout_marginHorizontal="@dimen/padding_common"
+                android:text="@string/email" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                style="@style/TextView.TextFielProfile"
+                android:layout_alignBottom="@+id/label_email"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/padding_common"
+                tools:text="Johndoe@gmail.com" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/label_email"
+                android:layout_marginHorizontal="@dimen/padding_common"
+                android:background="#1AFFFFFF" />
+
+            <TextView
+                android:id="@+id/label_password"
+                style="@style/TextView.LabelProfile"
+                android:layout_below="@+id/label_email"
+                android:layout_marginHorizontal="@dimen/padding_common"
+                android:layout_marginTop="1dp"
+                android:text="@string/password" />
+
+            <TextView
+                android:id="@+id/tvEdit"
+                style="@style/TextView.TextFielProfile"
+                android:layout_alignBottom="@+id/label_password"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/padding_common"
+                android:drawablePadding="8dp"
+                android:text="@string/edit"
+                app:drawableEndCompat="@drawable/ic_arrowright" />
+        </RelativeLayout>
+
+        <!-- Banner -->
+        <ImageView
+            android:id="@+id/img_banner"
+            android:layout_width="match_parent"
+            android:layout_height="312dp"
+            android:src="@drawable/ic_banner_profile" />
+
+        <!-- View Account: Account type , upgrade button-->
+        <RelativeLayout
+            android:id="@+id/view_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_info"
+            android:layout_marginTop="@dimen/padding_common"
+            android:background="@drawable/bg_block_profile"
+            android:paddingVertical="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/label_account"
+                style="@style/TextView.LabelProfile"
+                android:layout_marginHorizontal="@dimen/padding_common"
+                android:text="@string/account" />
+
+            <TextView
+                android:id="@+id/tvAccountType"
+                style="@style/TextView.TextFielProfile"
+                android:layout_alignBottom="@+id/label_account"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/padding_common"
+                tools:text="Yearly package until 20/03/2021" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/label_account"
+                android:layout_marginHorizontal="@dimen/padding_common"
+                android:background="#1AFFFFFF" />
+
+            <TextView
+                android:id="@+id/tvUpgrade"
+                style="@style/ActionButton.Small"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/label_account"
+                android:layout_marginHorizontal="@dimen/padding_common"
+                android:layout_marginVertical="@dimen/padding_common"
+                android:text="@string/upgrade"
+                tools:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/view_package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_account"
+                android:layout_marginHorizontal="@dimen/padding_common"
+                android:layout_marginVertical="@dimen/padding_common"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvViewPackage"
+                    style="@style/ActionButton.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="@string/view_package" />
+
+                <View
+                    android:layout_width="@dimen/padding_common"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/tvCancelPremium"
+                    style="@style/ActionButton.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_action_button_2"
+                    android:text="@string/cancel_premium" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Logout-->
+        <TextView
+            android:id="@+id/tvLogout"
+            style="@style/TextView.LabelProfile"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@+id/view_account"
+            android:layout_marginTop="@dimen/padding_common"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/bg_block_profile"
+            android:paddingHorizontal="@dimen/padding_common"
+            android:text="@string/logout"
+            app:drawableEndCompat="@drawable/ic_arrowright" />
+    </RelativeLayout>
+</ScrollView>

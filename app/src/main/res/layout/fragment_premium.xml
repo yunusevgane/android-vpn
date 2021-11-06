@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_premium_banner" />
+
+    <com.eskimobile.jetvpn.common.widget.SelectionItemView
+        android:id="@+id/sivMonthly"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="@dimen/padding_common"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_item_selection"
+        app:siv_price=""
+        app:siv_title="Monthly" />
+
+    <com.eskimobile.jetvpn.common.widget.SelectionItemView
+        android:id="@+id/sivYearly"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="@dimen/padding_common"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_item_selection"
+        app:siv_description=""
+        app:siv_price=""
+        app:siv_title="Yearly" />
+
+    <TextView
+        android:id="@+id/btnGetPremium"
+        style="@style/ActionButton.State"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/padding_common"
+        android:layout_marginBottom="32dp"
+        android:text="@string/get_premium_now" />
+</LinearLayout>

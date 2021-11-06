@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="us">@drawable/ic_flag_usa</drawable>
+    <drawable name="ca">@drawable/ic_flag_canada</drawable>
+    <drawable name="fr">@drawable/ic_flag_france</drawable>
+    <drawable name="de">@drawable/ic_flag_germany</drawable>
+    <drawable name="gb">@drawable/ic_flag_greatbritain</drawable>
+    <drawable name="in">@drawable/ic_flag_india</drawable>
+    <drawable name="jp">@drawable/ic_flag_japan</drawable>
+    <drawable name="nl">@drawable/ic_flag_netherlands</drawable>
+    <drawable name="ru">@drawable/ic_flag_russianfederation</drawable>
+    <drawable name="sg">@drawable/ic_flag_singapore</drawable>
+    <drawable name="kr">@drawable/ic_flag_southkorea</drawable>
+</resources>

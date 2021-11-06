@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorNavBottomBackground">
+
+        <ImageButton
+            android:id="@+id/btnLeft"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/padding_common"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrowleft" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/TextView.Title"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="@string/vpn_servers" />
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorNavBottomBackground"
+        app:tabSelectedTextColor="@color/colorTextPrimary"
+        app:tabTextAppearance="@style/TextView.Tab"
+        app:tabTextColor="#768498" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

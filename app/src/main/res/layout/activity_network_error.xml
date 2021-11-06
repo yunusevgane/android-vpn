@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/campton_bold"
+        android:text="@string/something_wrong"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/campton_bold"
+        android:text="@string/please_try_again"
+        android:textColor="@color/colorTextBlue"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/padding_common"
+        android:src="@drawable/ic_noconnection" />
+
+    <TextView
+        android:id="@+id/btnRefresh"
+        style="@style/ActionButton"
+        android:layout_width="165dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/refresh" />
+
+    <View
+        style="@style/ActionButton"
+        android:layout_width="165dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/refresh"
+        android:visibility="invisible" />
+</LinearLayout>
